@@ -1,0 +1,23 @@
+.survival-chart {
+  width: 100%;
+}
+
+.chart-info {
+  margin-top: 24px;
+  padding: 16px;
+  background: rgba(255, 140, 66, 0.1);
+  border-radius: 12px;
+  border-left: 3px solid var(--primary-orange);
+}
+
+.chart-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.chart-info strong {
+  color: var(--text-primary);
+}
+

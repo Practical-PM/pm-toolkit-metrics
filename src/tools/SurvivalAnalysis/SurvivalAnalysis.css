@@ -1,0 +1,131 @@
+/* ============================================
+   SURVIVAL ANALYSIS — Tool-specific overrides
+   Layout primitives, tiles, buttons, and modals
+   are provided by the design system.
+   ============================================ */
+
+/* Card container styles (background, border, radius, shadow)
+   are provided by the Tile component */
+
+.explanation-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.explanation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.explanation-content > p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.concept-box {
+  padding: 20px;
+  background: rgba(255, 140, 66, 0.1);
+  border-radius: 12px;
+  border-left: 3px solid var(--primary-orange);
+}
+
+.concept-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.concept-box p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 12px;
+}
+
+.concept-box ul {
+  margin: 0;
+  padding-left: 24px;
+}
+
+.concept-box li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 8px;
+}
+
+.concept-box strong {
+  color: var(--text-primary);
+}
+
+.use-cases {
+  margin-top: 8px;
+}
+
+.use-cases h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.use-case-card {
+  padding: 16px;
+  background: var(--bg-elevated);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.use-case-card strong {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.use-case-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.survival-walkthrough-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.4rem;
+  color: var(--text-secondary);
+}
+
+.chart-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.section-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .explanation-section h2,
+  .chart-section h2 {
+    font-size: 24px;
+  }
+}

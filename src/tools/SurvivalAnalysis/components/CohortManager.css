@@ -1,0 +1,47 @@
+/* Card container (background, border, radius, shadow) provided by Tile */
+
+.manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.manager-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-tertiary);
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+  background: var(--bg-elevated);
+}
+
+.empty-state p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.cohorts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .manager-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .cohorts-grid {
+    grid-template-columns: 1fr;
+  }
+}

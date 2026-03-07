@@ -1,0 +1,115 @@
+/* ============================================
+   COHORT MODAL — Tool-specific overrides
+   Modal chrome, form layout (.form-group, .modal-actions),
+   and buttons (.btn-primary, .btn-secondary)
+   are provided by the design system.
+   ============================================ */
+
+/* Color selector */
+.color-selector {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.color-option {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all var(--animation-fast);
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.color-option.active {
+  border-color: var(--text-primary);
+  box-shadow: 0 0 0 2px var(--bg-card), 0 0 0 4px var(--text-primary);
+}
+
+/* Data table */
+.data-table {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  background: var(--bg-elevated);
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 80px;
+  background: var(--bg-card);
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 80px;
+  padding: 12px;
+  border-top: 1px solid var(--border-light);
+  gap: 8px;
+  align-items: center;
+}
+
+.table-row input {
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color var(--animation-fast), box-shadow var(--animation-fast);
+  background: var(--bg-card);
+  color: var(--text-primary);
+}
+
+.table-row input:focus {
+  outline: none;
+  border-color: var(--primary-orange);
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.15);
+}
+
+.btn-remove {
+  background: var(--error);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--animation-fast);
+}
+
+.btn-remove:hover {
+  background: var(--error);
+  filter: brightness(1.1);
+}
+
+.btn-add-period {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px dashed var(--border-color);
+  border-radius: 8px;
+  background: var(--bg-elevated);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--animation-fast);
+}
+
+.btn-add-period:hover {
+  border-color: var(--primary-orange);
+  color: var(--primary-orange);
+  background: rgba(255, 140, 66, 0.1);
+}

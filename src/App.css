@@ -1,0 +1,4 @@
+/* Import design system */
+@import '@toolkit-pm/design-system';
+
+/* App-specific styles only */
