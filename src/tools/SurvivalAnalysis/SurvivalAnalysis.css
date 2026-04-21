@@ -29,7 +29,7 @@
 .concept-box {
   padding: 20px;
   background: rgba(255, 140, 66, 0.1);
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   border-left: 3px solid var(--primary-orange);
 }
 
@@ -83,7 +83,7 @@
 .use-case-card {
   padding: 16px;
   background: var(--bg-elevated);
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   border: 1px solid var(--border-color);
 }
 

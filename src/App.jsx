@@ -21,13 +21,13 @@ function AppContent() {
       </main>
 
       <footer className="app-footer animate-slide-bottom stagger-4">
-        <p className="sketchy-text">
+        <p className="ds-type">
           Part of <strong>The PM Toolkit</strong> - A collection of practical product management tools
         </p>
-        <p className="footer-links sketchy-text">
-          <a href="https://practicalpm.tools/" className="sketchy-text">&larr; Back to Toolkit</a>
+        <p className="footer-links ds-type">
+          <a href="https://practicalpm.tools/" className="ds-type">&larr; Back to Toolkit</a>
           {" \u2022 "}
-          <a href="https://github.com/Practical-PM" target="_blank" rel="noopener noreferrer" className="sketchy-text">
+          <a href="https://github.com/Practical-PM" target="_blank" rel="noopener noreferrer" className="ds-type">
             Open Source on GitHub - Fork &amp; Download
           </a>
         </p>
@@ -62,8 +62,8 @@ function MetricsLanding() {
   return (
     <div className="landing-page animate-fade-in">
       <div className="landing-header animate-fade-in stagger-1">
-        <h1 className="sketchy-text">Metrics</h1>
-        <p className="landing-description sketchy-text">
+        <h1 className="ds-type">Metrics</h1>
+        <p className="landing-description ds-type">
           Calculators and visualizations to help you measure, analyze, and understand 
           product and business metrics. Each tool includes explanations and interactive components.
         </p>
@@ -71,11 +71,11 @@ function MetricsLanding() {
 
       <div className="metrics-grid">
         {metrics.map((metric, index) => (
-          <Link key={metric.id} to={metric.path} className="metric-card rough-card animate-fade-in" style={{ animationDelay: `${0.2 + index * 0.1}s` }}>
+          <Link key={metric.id} to={metric.path} className="metric-card ds-surface-card animate-fade-in" style={{ animationDelay: `${0.2 + index * 0.1}s` }}>
             <div className="metric-icon">{metric.icon}</div>
-            <h3 className="metric-title sketchy-text">{metric.title}</h3>
-            <p className="metric-description sketchy-text">{metric.description}</p>
-            <div className="metric-link sketchy-text">
+            <h3 className="metric-title ds-type">{metric.title}</h3>
+            <p className="metric-description ds-type">{metric.description}</p>
+            <div className="metric-link ds-type">
               Explore &rarr; 
             </div>
           </Link>

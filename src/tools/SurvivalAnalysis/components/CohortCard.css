@@ -1,17 +1,17 @@
 .cohort-card {
   background: var(--bg-card);
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   padding: 20px;
   border: 1px solid var(--border-color);
   border-left: 3px solid;
   transition: all var(--animation-fast);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--shadow-lg);
 }
 
 .cohort-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: var(--shadow-surface);
+  border-color: color-mix(in srgb, var(--text-primary) 22%, var(--border-medium));
 }
 
 .card-header {

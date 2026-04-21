@@ -15,7 +15,7 @@
 .color-option {
   width: 40px;
   height: 40px;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   border: 3px solid transparent;
   cursor: pointer;
   transition: all var(--animation-fast);
@@ -33,7 +33,7 @@
 /* Data table */
 .data-table {
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   overflow: hidden;
   margin-bottom: 12px;
   background: var(--bg-elevated);
@@ -63,7 +63,7 @@
 .table-row input {
   padding: 8px;
   border: 1px solid var(--border-color);
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   font-size: 14px;
   transition: border-color var(--animation-fast), box-shadow var(--animation-fast);
   background: var(--bg-card);
@@ -80,7 +80,7 @@
   background: var(--error);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -101,7 +101,7 @@
   font-size: 14px;
   font-weight: 600;
   border: 1px dashed var(--border-color);
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   background: var(--bg-elevated);
   color: var(--text-secondary);
   cursor: pointer;
